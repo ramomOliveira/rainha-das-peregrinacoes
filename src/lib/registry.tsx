@@ -1,7 +1,7 @@
 'use client'
 
-import GlobalStyle from '@/globals'
-import theme from '@/theme'
+import GlobalStyle from '@/app/globals'
+import theme from '@/app/theme'
 import { useServerInsertedHTML } from 'next/navigation'
 import React, { useState } from 'react'
 import {
@@ -26,11 +26,11 @@ export default function StyledComponentsRegistry({
   if (typeof window !== 'undefined') return <>{children}</>
 
   return (
-    <ThemeProvider theme={theme}>
-      <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
+    <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
+      <ThemeProvider theme={theme}>
         {children}
-      </StyleSheetManager>
-      <GlobalStyle />
-    </ThemeProvider>
+        <GlobalStyle />
+      </ThemeProvider>
+    </StyleSheetManager>
   )
 }
