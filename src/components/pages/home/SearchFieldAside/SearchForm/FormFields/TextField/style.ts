@@ -26,5 +26,9 @@ export const Container = styled.label`
       outline: none;
       border-radius: 0;
     }
+
+    &::placeholder {
+      color: #00000040;
+    }
   }
 `

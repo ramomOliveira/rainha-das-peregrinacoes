@@ -4,7 +4,7 @@ export default function TextField() {
   return (
     <Container>
       Destino
-      <input type="text" />
+      <input type="text" placeholder="Buscar lugares" />
     </Container>
   )
 }
