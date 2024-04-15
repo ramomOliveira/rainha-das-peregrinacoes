@@ -11,4 +11,7 @@ export const Container = styled.button`
   background-color: #ffa800;
 
   border-radius: 40px;
+
+  display: flex;
+  justify-content: center;
 `
