@@ -15,6 +15,8 @@ export const Container = styled.div<ContainerProps>`
   width: 100%;
   height: ${props => (props.imageSizes === 'small' ? '200px' : '350px')};
   border-radius: 12px;
+  
+  box-shadow: 0px 4px 4px #00000040;
 
   padding: 12px 16px;
   display: flex;

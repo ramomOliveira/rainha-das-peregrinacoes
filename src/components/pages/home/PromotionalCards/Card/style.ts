@@ -27,6 +27,7 @@ const getHeaderBackgroundColor = (color: string) => {
 }
 
 export const Container = styled.div<ContainerProps>`
+  
   > header {
     border-radius: 12px 12px 0 0;
     font-size: 20px;
@@ -47,5 +48,6 @@ export const Container = styled.div<ContainerProps>`
     object-fit: cover;
     border-radius: 12px;
     border-radius: 0 0 12px 12px;
+    box-shadow: 0px 4px 4px #00000040;
   }
 `

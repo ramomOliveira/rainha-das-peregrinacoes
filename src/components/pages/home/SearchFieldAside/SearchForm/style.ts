@@ -24,6 +24,8 @@ export const Container = styled.aside`
     gap: 12px;
     width: 100%;
 
+    box-shadow: 0px 4px 4px #00000040;
+
     @media (min-width: 769px) {
       margin-top: -164px;
       padding: 24px 100px;
