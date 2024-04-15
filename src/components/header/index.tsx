@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Login from './Login'
 import NavigationLink from './NavigationLink'
 import { Container, Nav } from './style'
-import CaroucelImage from './CaroucelImage'
 
 export default function Header() {
   return (
@@ -19,10 +18,6 @@ export default function Header() {
 
         <Login />
       </header>
-
-      <main>
-        <CaroucelImage />
-      </main>
     </Container>
   )
 }

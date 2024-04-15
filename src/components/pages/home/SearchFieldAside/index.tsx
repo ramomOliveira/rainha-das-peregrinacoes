@@ -6,9 +6,7 @@ export default function SearchFieldAside() {
     <Container>
       <WrapperImage />
 
-      <div className="margin">
-        <SearchForm />
-      </div>
+      <SearchForm />
     </Container>
   )
 }

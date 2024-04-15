@@ -2,7 +2,11 @@
 
 import styled from 'styled-components'
 
-export const Container = styled.aside``
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 export const WrapperImage = styled.div`
   background-image: url('/images/Nazare-Portugal.jpg');

@@ -11,6 +11,8 @@ export const Container = styled.aside`
   align-items: center;
   border-radius: 6px;
   gap: 12px;
+  width: 100%;
+  max-width: 1046px;
 
   > div {
     > h1 {
