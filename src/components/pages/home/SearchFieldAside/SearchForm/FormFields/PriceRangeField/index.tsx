@@ -13,7 +13,7 @@ export default function PriceRangeField() {
   }
   return (
     <SelectField
-      title="Tipo de quarto"
+      title="Faixa de preço"
       placeholder="Selecione um valor"
       optionsPopUp={
         <Slider
