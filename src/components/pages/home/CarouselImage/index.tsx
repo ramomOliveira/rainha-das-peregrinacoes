@@ -71,21 +71,25 @@ const courses: Array<CoursesProps> = [
   },
 ]
 
-export default function CarouselImage() {
+interface ImageSizeProps {
+  imageSize?: 'small' | 'medium'
+}
+
+export default function CarouselImage({ imageSize }: ImageSizeProps) {
   return (
     <Container>
       <Swiper
         modules={[Navigation]}
         spaceBetween={20}
-        slidesPerView={3}
+        // slidesPerView={3}
         navigation
         breakpoints={{
-          640: {
-            width: 640,
+          300: {
+            width: 300,
             slidesPerView: 1,
           },
-          768: {
-            width: 768,
+          769: {
+            width: 769,
             slidesPerView: 2,
           },
           1046: {
@@ -100,6 +104,7 @@ export default function CarouselImage() {
               title={item.title}
               days={item.days}
               image={item.image}
+              imageSizes={imageSize}
             />
           </SwiperSlide>
         ))}

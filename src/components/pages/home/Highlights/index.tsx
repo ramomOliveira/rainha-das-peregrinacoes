@@ -1,5 +1,5 @@
+import CarouselImage from '../CarouselImage'
 import SectionTitle from '../SectionTitle'
-import HighlightCard from './HighlightCard'
 import { Container } from './style'
 
 export default function Highlights() {
@@ -7,12 +7,7 @@ export default function Highlights() {
     <Container>
       <SectionTitle title="Destaques" />
 
-      <div>
-        <HighlightCard />
-        <HighlightCard />
-        <HighlightCard />
-        <HighlightCard />
-      </div>
+      <CarouselImage imageSize="medium" />
     </Container>
   )
 }
