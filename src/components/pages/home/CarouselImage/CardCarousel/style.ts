@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 interface ContainerProps {
   image?: string
+  imageSizes?: 'small' | 'medium'
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -12,7 +13,7 @@ export const Container = styled.div<ContainerProps>`
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 200px;
+  height: ${props => (props.imageSizes === 'small' ? '200px' : '350px')};
   border-radius: 12px;
 
   padding: 12px 16px;

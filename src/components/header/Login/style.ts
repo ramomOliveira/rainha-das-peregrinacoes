@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
+  display: none;
 
   > svg {
     transform: rotate(45deg);
@@ -45,5 +44,9 @@ export const Container = styled.div`
         color: ${props => props.theme.colors?.primary};
       }
     }
+  }
+  @media (min-width: 769px) {
+    display: flex;
+    align-items: center;
   }
 `

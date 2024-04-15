@@ -7,15 +7,17 @@ export default function SearchForm() {
   return (
     <Container>
       <div>
-        <h1>Escolha o seu próximo destino</h1>
-
         <div>
-          <CheckboxFields />
+          <h1>Escolha o seu próximo destino</h1>
 
-          <FormFields />
+          <div>
+            <CheckboxFields />
+
+            <FormFields />
+          </div>
+
+          <Button>Procurar</Button>
         </div>
-
-        <Button />
       </div>
     </Container>
   )

@@ -3,8 +3,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.label`
-  display: flex;
-  flex-direction: column;
+  display: none;
+  @media (min-width: 769px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   background-color: white;
   border-radius: 6px;
   padding: 4px 8px;
