@@ -37,17 +37,8 @@ export default createGlobalStyle`
   }
 
   .margin {
-    padding-left: 12px;
-    padding-right: 12px;
-
-    /* @media (min-width: 480px) {
-      padding-left: 18px;
-      padding-right: 18px;
-    }
-    @media (min-width: 769px) {
-      padding-left: 24px;
-      padding-right: 24px;
-    } */
+    padding-left: 20px;
+    padding-right: 20px;
     @media (min-width: 1046px) {
       padding: 0;
       margin-left: auto;
