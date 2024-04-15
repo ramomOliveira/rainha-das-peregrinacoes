@@ -16,9 +16,7 @@ export default function LineSelect({ title }: LineSelectProps) {
       onClick={() => setOpenOptions(!openOptions)}
       onBlur={() => setOpenOptions(false)}
     >
-      <p>
-        {title}
-      </p>
+      <p>{title}</p>
 
       <div>
         <input type="text" />

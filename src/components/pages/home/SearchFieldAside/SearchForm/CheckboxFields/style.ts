@@ -9,7 +9,7 @@ export const Container = styled.div`
   gap: 16px;
   margin-bottom: 12px;
   opacity: 1;
-  
+
   > label {
     opacity: 1;
     display: flex;
